@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  compilerbook:
+    build: .
+    container_name: test_container
+    volumes:
+      - .:/home/dev/honenashi
+    working_dir: /home/dev/honenashi
+    tty: true
+    platform: linux/amd64
